@@ -2,7 +2,7 @@
  * @Author: Jerrychan
  * @Date: 2018-12-20 00:11:48
  * @LastEditors: Jerrychan
- * @LastEditTime: 2018-12-22 00:57:40
+ * @LastEditTime: 2018-12-23 00:24:27
  * @Description: 入口文件
  */
 
@@ -13,7 +13,7 @@ import router from './router/router';
 import fastClick from 'fastclick'; //移动端300ms点击延迟问题解决方案
 import './assets/styles/reset.css'; //初始化css样式
 import './assets/styles/border.css'; //解决部分高分辨率手机1px像素边距问题
-
+import './assets/iconfont/iconfont.css';
 Vue.config.productionTip = false;
 //绑定到根节点上
 fastClick.attach(document.body);
