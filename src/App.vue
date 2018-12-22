@@ -1,27 +1,12 @@
-<!--
- * @Author: Jerrychan
- * @Date: 2018-12-20 00:11:48
- * @LastEditors: Jerrychan
- * @LastEditTime: 2018-12-20 23:46:14
- * @Description: 单文件组件
- -->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div>
+    <p>Welcome to Your Vue.js App</p>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+<script>
+export default {
+  name: "Home"
+};
+</script>
