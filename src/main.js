@@ -1,9 +1,9 @@
 /*
- * @Author: Jerrychan
- * @Date: 2018-12-20 00:11:48
- * @LastEditors: Jerrychan
- * @LastEditTime: 2018-12-23 00:24:27
- * @Description: 入口文件
+ * @Author      : Jerrychan
+ * @Date        : 2018-12-20 00: 11: 48
+ * @LastEditors : Jerrychan
+ * @LastEditTime: 2018-12-23 01: 06: 18
+ * @Description : 入口文件
  */
 
 import Vue from 'vue';

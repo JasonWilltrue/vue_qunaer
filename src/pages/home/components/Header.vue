@@ -7,7 +7,6 @@
     <div class="header-right">城市<span class="iconfont arrow-icon">&#xe600;</span></div>
   </div>
 </template>
-
 <script>
 export default {
   name: "HomeHeader"
@@ -20,12 +19,12 @@ export default {
 @import '~@/assets/styles/varibles.styl';
 
 .header {
-  display: flex;
-  font-size: 0.18rem;
+  display    : flex;
+  font-size  : 0.18rem;
   font-weight: bold;
   line-height: 0.86rem;
-  background: $bgColor;
-  color: #fff;
+  background : $bgColor;
+  color      : #fff;
 
   .header-left {
     width: 0.64rem;
@@ -33,35 +32,35 @@ export default {
 
     .back-icon {
       text-align: center;
-      font-size: 0.4rem;
+      font-size : 0.4rem;
     }
   }
 
   .header-input {
-    flex: 1;
-    height: 0.64rem;
-    margin-top: 0.12rem;
-    line-height: 0.64rem;
-    color: #ccc;
-    margin-left: 0.12rem;
-    padding-left: 0.2rem;
-    background: #fff;
+    flex         : 1;
+    height       : 0.64rem;
+    margin-top   : 0.12rem;
+    line-height  : 0.64rem;
+    color        : #ccc;
+    margin-left  : 0.12rem;
+    padding-left : 0.2rem;
+    background   : #fff;
     border-radius: 0.1rem;
 
     .search-icon {
-      font-size: 0.2rem;
+      font-size    : 0.2rem;
       padding-right: 0.05rem;
     }
   }
 
   .header-right {
-    width: 1.24rem;
-    float: right;
+    width     : 1.24rem;
+    float     : right;
     text-align: center;
 
     .arrow-icon {
       margin-left: 0.1rem;
-      font-size: 0.2rem;
+      font-size  : 0.2rem;
     }
   }
 }
