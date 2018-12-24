@@ -68,7 +68,7 @@ export default {
 
 
 <style lang="stylus" scoped>
-.wrapper >>> .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.wrapper >>> .swiper-pagination-bullet-active {
   background: red !important;
 
   .wrapper {
