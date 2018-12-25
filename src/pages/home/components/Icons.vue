@@ -33,55 +33,55 @@ export default {
         {
           id    : "001",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
           desc: "景点门票"
         },
         {
           id    : "002",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
           desc: "汽车票"
         },
         {
           id    : "003",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
           desc: "飞机票"
         },
         {
           id    : "004",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
           desc: "动植物园"
         },
         {
           id    : "005",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
           desc: "一日游"
         },
         {
           id    : "006",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/b8/c5dcdb58deec2402.png",
           desc: "自然风光"
         },
         {
           id    : "007",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1811/f6/e54fad3ea337b02.gif",
           desc: "公园"
         },
         {
           id    : "008",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/17/99402a22ce4af302.png",
           desc: "网红地实例速度其二吧v"
         },
         {
           id    : "009",
           imgUrl: 
-            "https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_110x10000.jpg_.webp",
+            "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
           desc: "全部"
         }
       ]
@@ -131,20 +131,21 @@ export default {
       box-sizing: border-box;
 
       .icon-img-content {
+        width     : 1.5rem;
+        height    : 1.5rem;
         margin-top: 0.2rem;
       }
     }
 
     .icon-title {
-      position    : absolute;
-      bottom      : 0;
-      left        : 0;
-      right       : 0;
-      height      : 0.44rem;
-      line-height : 0.44rem;
-      text-align  : center;
-      color       : $titleColor;
-      padding-left: 0.3rem;
+      position   : absolute;
+      bottom     : 0;
+      left       : 0;
+      right      : 0;
+      height     : 0.44rem;
+      line-height: 0.44rem;
+      text-align : center;
+      color      : $titleColor;
       ellipsis();
     }
   }
