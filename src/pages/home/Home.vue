@@ -28,11 +28,9 @@ export default {
   },
   methods: {
     getHomeInfo() {
-      axios
-        .get("http://rap2api.taobao.org/app/mock/8651/api/tuangou")
-        .then(res => {
-          console.log(res);
-        });
+      axios.get("/api/index.json").then(res => {
+        console.log(res);
+      });
     }
   },
   mounted() {
