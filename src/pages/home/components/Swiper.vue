@@ -1,9 +1,12 @@
 <template>
   <div clsss="wrapper">
-    <swiper :options="swiperOption">
+    <swiper
+      :options = "swiperOption"
+        v-if   = "showSwiper"
+    >
       <!-- slides -->
       <swiper-slide
-          v-for = "item in swiperList"
+          v-for = "item in list"
         :key    = "item.id"
       >
         <img
@@ -23,7 +26,10 @@
 
 <script>
 export default {
-  name: "HomeSwiper",
+  name : "HomeSwiper",
+  props: {
+    list: Array
+  },
   data() {
     return {
       swiperOption: {
@@ -32,32 +38,14 @@ export default {
         // some swiper options/callbacks
         // 所有的参数同 swiper 官方 api 参数
         // ...
-      },
-      swiperList: [
-        {
-          id    : "001",
-          imgUrl: 
-            "https://img1.qunarzz.com/vc/a4/29/dd/4a0734b77f675da2a8ca4a9879.jpg"
-        },
-        {
-          id    : "002",
-          imgUrl: 
-            "https://img1.qunarzz.com/vc/30/e6/6c/7236d07f50947d523bcdeadae8.jpg"
-        },
-        {
-          id    : "003",
-          imgUrl: 
-            "https://img1.qunarzz.com/vc/f5/10/9c/b647d3ee724a720ce0fa6101f0.jpg"
-        },
-        {
-          id    : "004",
-          imgUrl: 
-            "https://img1.qunarzz.com/vc/d4/d0/62/a6b7c23c1b251dfc874ce66efa.jpg"
-        }
-      ]
+      }
     };
   },
-  computed: {},
+  computed: {
+    showSwiper() {
+      return this.list.length;
+    }
+  },
   mounted() {
     // current swiper instance
     // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了

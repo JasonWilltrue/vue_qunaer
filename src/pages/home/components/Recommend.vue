@@ -6,7 +6,7 @@
     <ul>
       <li
           class = "item border-bottom"
-          v-for = "item in recommendList"
+          v-for = "item in list"
         :key    = "item.id"
       >
         <div class="item-img-wrapper">
@@ -32,48 +32,9 @@
 
 <script>
 export default {
-  name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id    : "001",
-          imgUrl: 
-            "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
-          title: 
-            "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
-          desc : "8天7晚|元旦、春节|多机票可选",
-          price: "2110"
-        },
-        {
-          id    : "002",
-          imgUrl: 
-            "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
-          title: 
-            "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
-          desc : "8天7晚|元旦、春节|多机票可选",
-          price: "2110"
-        },
-        {
-          id    : "003",
-          imgUrl: 
-            "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
-          title: 
-            "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
-          desc : "8天7晚|元旦、春节|多机票可选",
-          price: "2110"
-        },
-        {
-          id    : "004",
-          imgUrl: 
-            "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
-          title: 
-            "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
-          desc : "8天7晚|元旦、春节|多机票可选",
-          price: "2110"
-        }
-      ]
-    };
+  name : "HomeRecommend",
+  props: {
+    list: Array
   }
 };
 </script>

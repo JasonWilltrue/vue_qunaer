@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li
-          v-for = "item in weekendList"
+          v-for = "item in list"
         :key    = "item.id"
       >
         <div class="item-img-wrapper">
@@ -27,33 +27,9 @@
 
 <script>
 export default {
-  name: "HomeWeekend",
-  data() {
-    return {
-      weekendList: [
-        {
-          id    : "001",
-          imgUrl: 
-            "http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
-          title: "京城周末撒欢",
-          desc : "在帝都过周末，不仅仅是城中游！"
-        },
-        {
-          id    : "002",
-          imgUrl: 
-            "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
-          title: "京城有好泉",
-          desc : "细数北京温泉，温暖你的冬天"
-        },
-        {
-          id    : "003",
-          imgUrl: 
-            "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-          title: "寻找北京的皇城范儿",
-          desc : "数百年的宫廷庙宇，至今依旧威严霸气"
-        }
-      ]
-    };
+  name : "HomeWeekend",
+  props: {
+    list: Array
   }
 };
 </script>

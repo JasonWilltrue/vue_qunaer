@@ -66,6 +66,56 @@
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
         "desc"  : "全部"
       }
+    ],
+    "recommendList": [
+      {
+        "id"    : "001",
+        "imgUrl": "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
+        "title" : "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
+        "desc"  : "8天7晚|元旦、春节|多机票可选",
+        "price" : "2110"
+      },
+      {
+        "id"    : "002",
+        "imgUrl": "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
+        "title" : "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
+        "desc"  : "8天7晚|元旦、春节|多机票可选",
+        "price" : "2110"
+      },
+      {
+        "id"    : "003",
+        "imgUrl": "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
+        "title" : "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
+        "desc"  : "8天7晚|元旦、春节|多机票可选",
+        "price" : "2110"
+      },
+      {
+        "id"    : "004",
+        "imgUrl": "https://userimg.qunarzz.com/imgs/201709/13/C._M0DCicrX4NHsWyIii160.jpg",
+        "title" : "春节限时特价！泸沽湖丽江大理8日 五星酒店+VIP游艇&红酒派对+温泉SPA",
+        "desc"  : "8天7晚|元旦、春节|多机票可选",
+        "price" : "2110"
+      }
+    ],
+    "weekendList": [
+      {
+        "id"    : "001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
+        "title" : "京城周末撒欢",
+        "desc"  : "在帝都过周末，不仅仅是城中游！"
+      },
+      {
+        "id"    : "002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+        "title" : "京城有好泉",
+        "desc"  : "细数北京温泉，温暖你的冬天"
+      },
+      {
+        "id"    : "003",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+        "title" : "寻找北京的皇城范儿",
+        "desc"  : "数百年的宫廷庙宇，至今依旧威严霸气"
+      }
     ]
   }
 }
