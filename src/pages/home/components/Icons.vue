@@ -1,8 +1,8 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide
-          v-for = "(page,index) in list"
+          v-for = "(page,index) in pages"
         :key    = 'index'
       >
         <div
@@ -30,11 +30,17 @@ export default {
   props: {
     list: Array
   },
+  data() {
+    return {
+      swiperOption: {
+        autoplay: false
+      }
+    };
+  },
   computed: {
     //计算属性
     pages() {
       const pages = [];
-      console.log(this.list);
       this.list.forEach((item, index) => {
         const page = Math.floor(index / 8);
         if (!pages[page]) {
