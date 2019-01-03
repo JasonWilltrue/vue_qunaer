@@ -2,13 +2,13 @@
  * @Author      : Jerrychan
  * @Date        : 2018-12-20 00: 11: 48
  * @LastEditors : Jerrychan
- * @LastEditTime: 2018-12-29 00: 33: 31
+ * @LastEditTime: 2019-01-03 22: 10: 21
  * @Description : 入口文件
  */
 
 import Vue from 'vue';
-import Home from './pages/home/Home.vue';
-import router from './router/router';
+import App from './App';
+import router from './router/router.js';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 // import store from './store';
 import fastClick from 'fastclick'; //移动端300ms点击延迟问题解决方案
@@ -25,6 +25,6 @@ Vue.use(VueAwesomeSwiper);
 new Vue({
   el: '#app',
   router,
-  components: { Home },
-  template  : '<Home/>',
+  components: { App },
+  template  : '<App/>',
 });
