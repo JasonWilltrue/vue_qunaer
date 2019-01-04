@@ -1,17 +1,22 @@
 <template>
-  <city-header></city-header>
+	<div>
+		<city-header></city-header>
+		<city-list></city-list>
+	</div>
 </template>
 
 
 
 <script>
-import CityHeader from "./components/Header";
-export default {
-  name      : "City",
-  components: {
-    CityHeader
-  }
-};
+	import CityHeader from "./components/Header";
+	import CityList from "./components/List";
+	export default {
+		name: "City",
+		components: {
+			CityHeader,
+			CityList
+		}
+	};
 </script>
 
 
