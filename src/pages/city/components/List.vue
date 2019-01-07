@@ -14,117 +14,36 @@
 			<div class="area">
 				<div class="title border-topbottom">热门城市</div>
 				<div class="button-list">
-					<div class="button-wrapper">
+					<div class="button-wrapper" v-for="item in hot" :key="item.id">
 						<div class="button">
-							北京
-						</div>
-					</div>
-					<div class="button-wrapper">
-						<div class="button">
-							上海
-						</div>
-					</div>
-					<div class="button-wrapper">
-						<div class="button">
-							杭州
-						</div>
-					</div>
-					<div class="button-wrapper">
-						<div class="button">
-							广州
-						</div>
-					</div>
-					<div class="button-wrapper">
-						<div class="button">
-							香港
+							{{item.name}}
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="area">
-			</div>
-			<div class="title border-topbottom">A</div>
-			<div class="item-list">
-				<div class="item border-bottom">
-					阿拉尔
-				</div>
-				<div class="item border-bottom">
-					安徽
-				</div>
-				<div class="item border-bottom">
-					鞍山
+			<div class="area" v-for="(item,key) of list" :key="key">
+				<div class="title border-topbottom">{{key}}</div>
+				<div class="item-list" v-for="i of item" :key="i.id">
+					<div class="item border-bottom">
+						{{i.name}}
+					</div>
 				</div>
 			</div>
-			<div class="title border-topbottom">B</div>
-			<div class="item-list">
-				<div class="item border-bottom">
-					北京
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-				<div class="item border-bottom">
-					北京
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-				<div class="item border-bottom">
-					北京
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-			</div>
-			<div class="title border-topbottom">C</div>
-			<div class="item-list">
-				<div class="item border-bottom">
-					城
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-				<div class="item border-bottom">
-					城
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-				<div class="item border-bottom">
-					城
-				</div>
-				<div class="item border-bottom">
-					北戴河
-				</div>
-				<div class="item border-bottom">
-					北平
-				</div>
-			</div>
+
 		</div>
+	</div>
 	</div>
 </template>
 
 <script>
 	import Bscroll from 'better-scroll'
-	
+
 	export default {
 		name: 'CityList',
-		
+		props: {
+			hot: Array,
+			list: Object
+		},
 		mounted() {
 			this.scroll = new Bscroll(this.$refs.wrapper)
 		}
@@ -169,8 +88,9 @@
 			float: left;
 			width: 30%;
 
-			margin-left:.2rem;
-			 .button {
+			margin-left: .2rem;
+
+			.button {
 				padding: .1rem;
 				margin: .1rem 0;
 				text-align: center;

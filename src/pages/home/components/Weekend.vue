@@ -6,7 +6,7 @@
     <ul>
       <li
           v-for = "item in list"
-        :key    = "item.id"
+         :key    = "item.id"
       >
         <div class="item-img-wrapper">
           <img

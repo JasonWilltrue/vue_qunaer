@@ -1,0 +1,92 @@
+{
+	"code": 1,
+	"data": {
+		"hotCities": [{
+				"id": 1,
+				"spell": "beijing",
+				"name": "北京"
+			},
+			{
+				"id": 2,
+				"spell": "shanghai",
+				"name": "上海"
+			},
+			{
+				"id": 3,
+				"spell": "hangzhou",
+				"name": "杭州"
+			},
+			{
+				"id": 4,
+				"spell": "shenzhen",
+				"name": "深圳"
+			}
+		],
+		"cities": {
+			"A": [{
+					"id": 56,
+					"spell": "aba",
+					"name": "阿北"
+				},
+				{
+					"id": 57,
+					"spell": "aba",
+					"name": "阿北"
+				},
+				{
+					"id": 58,
+					"spell": "aba",
+					"name": "阿北"
+				}
+			],
+			"B": [{
+					"id": 59,
+					"spell": "beijing",
+					"name": "北京"
+				},
+				{
+					"id": 60,
+					"spell": "beike",
+					"name": "贝壳"
+				},
+				{
+					"id": 61,
+					"spell": "bebe",
+					"name": "贝贝"
+				}
+			],
+			"C": [{
+					"id": 62,
+					"spell": "cwei",
+					"name": "车位"
+				},
+				{
+					"id": 63,
+					"spell": "chuanqi",
+					"name": "传奇"
+				},
+				{
+					"id": 65,
+					"spell": "chencheng",
+					"name": "成成"
+				}
+			],
+			"D": [{
+					"id": 66,
+					"spell": "daxiao",
+					"name": "大小"
+				},
+				{
+					"id": 70,
+					"spell": "daer",
+					"name": "大二"
+				},
+				{
+					"id": 71,
+					"spell": "dajian",
+					"name": "搭建"
+				}
+			]
+		}
+	}
+}
