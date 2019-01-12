@@ -1,7 +1,8 @@
 <template>
 	<div>
 		<city-header></city-header>
-		<city-list :list="cities" :hot="hotCities"></city-list>
+		<city-search :list="cities"></city-search>
+		<!-- <city-list :list="cities" :hot="hotCities"></city-list> -->
 		<city-alphabet></city-alphabet>
 	</div>
 </template>
@@ -12,13 +13,15 @@
 	import CityHeader from "./components/Header";
 	import CityList from "./components/List";
 	import CityAlphabet from "./components/Alphabet";
+	import CitySearch from "./components/Search";
 	import axios from "axios";
 	export default {
 		name: "City",
 		components: {
 			CityHeader,
 			CityList,
-			CityAlphabet
+			CityAlphabet,
+			CitySearch
 		},
 		data() {
 			return {
@@ -35,7 +38,7 @@
 					 const data = res.data.data;
               this.cities = data.cities;
 					   this.hotCities =data.hotCities;
-						console.log(data.cities);
+					
 				}
 			}
 	  },
