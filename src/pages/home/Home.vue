@@ -39,17 +39,14 @@ export default {
       axios.get("/api/index.json").then(this.getHomeInfoSucc);
     },
     getHomeInfoSucc(res) {
-      res = res.data;
-      console.log(res);
-
-      if (res.code && res.data) {
-        const data               = res.data;
-              this.city          = data.city;
-              this.swiperList    = data.swiperList;
-              this.iconList      = data.iconList;
-              this.recommendList = data.recommendList;
-              this.weekendList   = data.weekendList;
-      }
+      res = res.data
+     if (res.ret && res.data) {
+       const data = res.data
+       this.swiperList = data.swiperList
+       this.iconList = data.iconList
+       this.recommendList = data.recommendList
+       this.weekendList = data.weekendList
+     }
     }
   },
 

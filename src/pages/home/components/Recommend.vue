@@ -20,7 +20,7 @@
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <div class="item-footer">
-            <span class="item-price">￥{{item.price}}起</span>
+            <span class="item-price">￥1999 起</span>
             <span class="item-button">查看详情</span>
           </div>
         </div>
