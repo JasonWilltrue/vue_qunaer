@@ -13,7 +13,7 @@
 
 <script>
 	export default {
-		name:'CityAlphabet'
+		name: 'CityAlphabet'
 		
 	}
 </script>
@@ -21,20 +21,20 @@
 <style lang="stylus" scoped>
 	@import '~@/assets/styles/varibles.styl';
   .list{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		position: absolute;
-		top:1.58rem;
-		right: 0;
-		bottom: 0;
-		width:0.4rem;
+		display        : flex;
+		flex-direction : column;
+		justify-content: center;
+		position       : absolute;
+		top            : 1.58rem;
+		right          : 0;
+		bottom         : 0;
+		width          : 0.4rem;
 		.item{
-			 line-height:.5rem;
-			 text-align:center;
-			 font-size:0.3rem;
+			 line-height: .5rem;
+			 text-align : center;
+			 font-size  : 0.3rem;
 			 &.active{
-				  color:#00bcd4;
+				  color: #00bcd4;
 			 }
 		}
 	}

@@ -7,8 +7,6 @@
 	</div>
 </template>
 
-
-
 <script>
 	import CityHeader from "./components/Header";
 	import CityList from "./components/List";
@@ -16,7 +14,7 @@
 	import CitySearch from "./components/Search";
 	import axios from "axios";
 	export default {
-		name: "City",
+		name      : "City",
 		components: {
 			CityHeader,
 			CityList,
@@ -25,8 +23,8 @@
 		},
 		data() {
 			return {
-				cities: {},
-				hotCities:[]
+				cities   : {},
+				hotCities: []
 			}
 		},
 	  methods: {
@@ -35,9 +33,9 @@
 	  	},
 			getCityInfoSucc(res){
 				if(res.data.code && res.data.data){
-					 const data = res.data.data;
-              this.cities = data.cities;
-					   this.hotCities =data.hotCities;
+					 const data           = res.data.data;
+					       this.cities    = data.cities;
+					       this.hotCities = data.hotCities;
 					
 				}
 			}
@@ -47,8 +45,7 @@
 		},
 	};
 </script>
-
-
+/*修改测试*/
 
 <style lang="stylus" scoped>
 	  
