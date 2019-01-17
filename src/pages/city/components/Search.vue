@@ -42,7 +42,7 @@
 					this.citylist = result;
 				},100)
 			}
-			
+
 		}
 	}
 </script>
@@ -51,7 +51,6 @@
 @import '~@/assets/styles/varibles.styl';
 
 .search{
-
 	height: .72rem;
 	padding: 0 .1rem;
 	background: $bgColor;

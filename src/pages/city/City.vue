@@ -2,7 +2,7 @@
 	<div>
 		<city-header></city-header>
 		<city-search :list="cities"></city-search>
-		<!-- <city-list :list="cities" :hot="hotCities"></city-list> -->
+		<city-list :list="cities" :hot="hotCities"></city-list>
 		<city-alphabet></city-alphabet>
 	</div>
 </template>
@@ -32,12 +32,12 @@
 	  		axios.get("/api/city.json").then(this.getCityInfoSucc);
 	  	},
 			getCityInfoSucc(res){
-				if(res.data.code && res.data.data){
-					 const data           = res.data.data;
-					       this.cities    = data.cities;
-					       this.hotCities = data.hotCities;
-					
-				}
+				res = res.data
+		 if (res.ret && res.data) {
+			 const data = res.data
+			 this.cities = data.cities
+			 this.hotCities = data.hotCities
+		 }
 			}
 	  },
 		mounted(){
@@ -48,5 +48,5 @@
 /*修改测试*/
 
 <style lang="stylus" scoped>
-	  
+
 </style>
