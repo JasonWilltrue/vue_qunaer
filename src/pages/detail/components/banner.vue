@@ -12,7 +12,6 @@
         </div>
       </div>
     </div>
-
       <common-gallary
         :imgs="bannerImgs"
         v-show="showGallary"
