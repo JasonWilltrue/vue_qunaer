@@ -8,6 +8,7 @@
 				<li class="item">F</li>
 				<li class="item">G</li>
 				<li class="item">H</li>
+				<li class="item">J</li>
 		</ul>
 </template>
 

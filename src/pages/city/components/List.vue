@@ -6,7 +6,7 @@
 				<div class="button-list">
 					<div class="button-wrapper">
 						<div class="button">
-							杭州
+							{{this.$store.state.city}}
 						</div>
 					</div>
 				</div>

@@ -10,7 +10,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router/router.js';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-// import store from './store';
+import store from './store';     //引入store
 import fastClick from 'fastclick'; //移动端300ms点击延迟问题解决方案
 import './assets/styles/reset.css'; //初始化css样式
 import './assets/styles/border.css'; //解决部分高分辨率手机1px像素边距问题
@@ -25,7 +25,7 @@ Vue.use(VueAwesomeSwiper);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template  : '<App/>',
 });
-
