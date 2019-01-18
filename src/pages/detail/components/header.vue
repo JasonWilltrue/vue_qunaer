@@ -39,10 +39,15 @@ export default {
       }
     }
   },
-  mounted() {
+  /**
+   * 全局解绑
+   * @return {[type]} [description]
+   */
+  mounted(){
     window.addEventListener('scroll', this.handleScroll)
   },
-  unmounted() {
+  destroyed(){
+    console.log('结束绑定');
     window.removeEventListener('scroll', this.handleScroll)
   }
 }

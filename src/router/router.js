@@ -29,7 +29,10 @@ export default new Router({
       path     : '/about',
       name     : 'about',
       component: About,
-      // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-    },
-  ],
+
+    }],
+    // 每次切换页面重新回到最顶部
+  scrollBehavior (to, from, savedPosition) {
+   return { x: 0, y: 0 }
+ }
 });
