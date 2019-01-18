@@ -51,7 +51,9 @@
 		methods: {
 		  handleCityClick(city) {
 		      console.log('点击'+city);
-					this.$store.dispatch("changeCity",city);
+					console.log(this.$router);
+					this.$store.commit("changeCity",city);
+					this.$router.push("/");
 		  }
 		},
 		mounted() {
@@ -97,9 +99,7 @@
 		.button-wrapper {
 			float: left;
 			width: 30%;
-
 			margin-left: .2rem;
-
 			.button {
 				padding: .1rem;
 				margin: .1rem 0;
