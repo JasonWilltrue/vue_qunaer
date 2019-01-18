@@ -14,7 +14,11 @@
 			<div class="area">
 				<div class="title border-topbottom">热门城市</div>
 				<div class="button-list">
-					<div class="button-wrapper" v-for="item in hot" :key="item.id">
+					<div class="button-wrapper"
+					v-for="item in hot"
+					:key="item.id"
+					@click = "handleCityClick(item.name)"
+					>
 						<div class="button">
 							{{item.name}}
 						</div>
@@ -43,6 +47,12 @@
 		props: {
 			hot: Array,
 			list: Object
+		},
+		methods: {
+		  handleCityClick(city) {
+		      console.log('点击'+city);
+					this.$store.dispatch("changeCity",city);
+		  }
 		},
 		mounted() {
 			this.scroll = new Bscroll(this.$refs.wrapper)
