@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/pages/home/Home.vue';
-import About from '@/pages/about/About.vue';
-import City from '@/pages/city/City.vue';
-import Detail from '@/pages/detail/Detail.vue';
+// import Home from '@/pages/home/Home.vue';
+// import About from '@/pages/about/About.vue';
+// import City from '@/pages/city/City.vue';
+// import Detail from '@/pages/detail/Detail.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -13,22 +13,22 @@ export default new Router({
     {
       path     : '/',
       name     : 'home',
-      component: Home,
+      component: ()=>import('../pages/home/Home'),
     },
     {
       path     : '/city',
       name     : 'City',
-      component: City,
+      component: ()=>import('../pages/city/City'),
     },
     {
       path     : '/detail/:id',
       name     : 'Detail',
-      component: Detail,
+      component: ()=>import('../pages/detail/Detail'),
     },
     {
       path     : '/about',
-      name     : 'about',
-      component: About,
+      name     : 'About',
+      component: ()=>import('../pages/about/About'),
 
     }],
     // 每次切换页面重新回到最顶部
